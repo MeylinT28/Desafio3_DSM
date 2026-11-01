@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">AprendeApp</string>
+    <string name="welcome">¡Bienvenido a AprendeApp!</string>
+    <string name="subtitle">Encuentra recursos para aprender y crecer</string>
+    <string name="full_name">Tu nombre (solo al registrarte)</string>
+    <string name="account_type">Tipo de cuenta</string>
+    <string name="login_hint">Si ya tienes cuenta, inicia sesión. Para registrarte, completa tu nombre.</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="register">Crear cuenta</string>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="role">Tipo de cuenta</string>
+    <string name="student">Estudiante</string>
+    <string name="teacher">Docente</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="resources">Recursos de aprendizaje</string>
+    <string name="search_hint">Buscar por ID, título o tipo</string>
+    <string name="all">Todos</string>
+    <string name="books">Libro</string>
+    <string name="videos">Video</string>
+    <string name="articles">Artículo</string>
+    <string name="tutorials">Tutorial</string>
+    <string name="favorites">Mis favoritos</string>
+    <string name="add_resource">Agregar recurso</string>
+    <string name="title">Título</string>
+    <string name="description">Descripción</string>
+    <string name="type">Tipo</string>
+    <string name="link">Enlace</string>
+    <string name="image">URL de imagen</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="empty">No hay recursos para mostrar.</string>
+</resources>
