@@ -30,4 +30,14 @@
     <string name="save">Guardar</string>
     <string name="cancel">Cancelar</string>
     <string name="empty">No hay recursos para mostrar.</string>
+    <string name="daily_learning_question">¿Qué deseas aprender hoy?</string>
+    <string name="search_description">Escribe lo que buscas...</string>
+    <string name="filter_categories">Filtrar recursos por categoría</string>
+    <string name="loading_resources">Cargando recursos</string>
+    <string name="favorite_button">♡ Mis favoritos</string>
+    <string name="add_button">+ Agregar</string>
+    <string name="open_resource">Abrir recurso</string>
+    <string name="rate_resource">☆ Calificar recurso (1-5)</string>
+    <string name="edit_resource">Editar</string>
+    <string name="delete_resource">Eliminar</string>
 </resources>
