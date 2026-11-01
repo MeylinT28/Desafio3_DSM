@@ -58,12 +58,46 @@ class MainActivity : AppCompatActivity() {
         role.setPopupBackgroundResource(android.R.color.white)
         val auth = AuthController(session)
         findViewById<Button>(R.id.btnRegister).setOnClickListener {
+
+            val userName = name.text.toString().trim()
+            val userEmail = email.text.toString().trim()
+            val userPassword = password.text.toString()
+
             if (role.selectedItemPosition == 0) {
-                Toast.makeText(this, "Selecciona Estudiante o Docente.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this,
+                    "Selecciona Estudiante o Docente.",
+                    Toast.LENGTH_SHORT
+                ).show()
                 return@setOnClickListener
             }
-            val error = auth.register(name.text.toString().trim(), email.text.toString().trim(), password.text.toString(), role.selectedItem.toString())
-            if (error != null) Toast.makeText(this, error, Toast.LENGTH_LONG).show() else { Toast.makeText(this, "Cuenta creada correctamente", Toast.LENGTH_SHORT).show(); openResources() }
+
+            if (userName.isBlank() || userEmail.isBlank() || userPassword.isBlank()) {
+                Toast.makeText(
+                    this,
+                    "Completa todos los campos para registrarte.",
+                    Toast.LENGTH_SHORT
+                ).show()
+                return@setOnClickListener
+            }
+
+            val error = auth.register(
+                userName,
+                userEmail,
+                userPassword,
+                role.selectedItem.toString()
+            )
+
+            if (error != null) {
+                Toast.makeText(this, error, Toast.LENGTH_LONG).show()
+            } else {
+                Toast.makeText(
+                    this,
+                    "Cuenta creada correctamente",
+                    Toast.LENGTH_SHORT
+                ).show()
+                openResources()
+            }
         }
         findViewById<Button>(R.id.btnLogin).setOnClickListener {
             if (role.selectedItemPosition == 0) {
