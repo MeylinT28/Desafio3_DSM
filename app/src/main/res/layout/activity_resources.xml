@@ -182,7 +182,8 @@
         android:padding="24dp"
         android:text="@string/empty"
         android:textColor="#8D7478"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:accessibilityLiveRegion="polite" />
 
     <!-- LISTA DE RECURSOS -->
     <androidx.recyclerview.widget.RecyclerView
